@@ -6,3 +6,4 @@ metadata:
   name: {{ .Values.secrets.registry }}
   namespace: {{ .Values.namespace }}
 type: kubernetes.io/dockerconfigjson
+
