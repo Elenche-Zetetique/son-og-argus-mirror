@@ -17,3 +17,4 @@ spec:
       containers:
       - image: {{ .Values.image.repository }}
         name: perceptiview
+
