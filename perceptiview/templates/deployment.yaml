@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: logindep
-  name: perceptiview-pod
+    app: {{ .Values.image.label }}
+  name: perceptiview
 spec:
-  replicas: 3
+  replicas: {{ .Values.image.replicaCount }}
   selector:
     matchLabels:
-      app: logindep
+      app: {{ .Values.image.label }}
   template:
     metadata:
       labels:
-        app: logindep
+        app: {{ .Values.image.label }}
     spec:
       containers:
-      - image: registry.gitlab.com/ez-machine-learning/perceptiview:ce509772
-        name: perceptiview-c
+      - image: {{ .Values.image.repository }}
+        name: perceptiview
