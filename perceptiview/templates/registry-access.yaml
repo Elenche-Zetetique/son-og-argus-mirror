@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL3JlZ2lzdHJ5LmdpdGxhYi5jb20iOnsidXNlcm5hbWUiOiJzb24tb2YtYXJndXMiLCJwYXNzd29yZCI6ImdsZHQtUExKU3o1Y0dWUmNyNnRra1J0VjgiLCJlbWFpbCI6InNvbi1vZi1hcmd1c0BnaXRsYWIuY29tIiwiYXV0aCI6ImMyOXVMVzltTFdGeVozVnpPbWRzWkhRdFVFeEtVM28xWTBkV1VtTnlOblJyYTFKMFZqZz0ifX19
+kind: Secret
+metadata:
+  name: registry-access
+  namespace: {{ .Values.namespace }}
+type: kubernetes.io/dockerconfigjson
