@@ -2,17 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: {{ .Values.image.label }}
+    app: {{ .Values.label }}
   name: perceptiview
 spec:
   replicas: {{ .Values.image.replicaCount }}
   selector:
     matchLabels:
-      app: {{ .Values.image.label }}
+      app: {{ .Values.label }}
   template:
     metadata:
       labels:
-        app: {{ .Values.image.label }}
+        app: {{ .Values.label }}
     spec:
       containers:
       - image: {{ .Values.image.repository }}
