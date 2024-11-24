@@ -18,4 +18,5 @@ spec:
       containers:
       - image: {{ .Values.image.name }}
         name: perceptiview
-
+      imagePullSecrets:
+      - name: {{ .Values.secrets.registry }}
