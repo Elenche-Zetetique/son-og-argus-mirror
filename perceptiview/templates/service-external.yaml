@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: perceptiview
+  namespace: kube-system
+spec:
+  type: ExternalName
+  externalName: perceptiview.default.svc.cluster.local

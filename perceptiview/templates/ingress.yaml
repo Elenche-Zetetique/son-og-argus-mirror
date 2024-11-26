@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: perceptiview
+  namespace: kube-system
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: perceptiview.home
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: perceptiview
+            port:
+              number: 80
