@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  name: registry.gitlab.com/ez-machine-learning/perceptiview:8b354638
+  name: registry.gitlab.com/ez-machine-learning/perceptiview:66692209
 label: perceptiview
 namespace: perceptiview
 secrets:
