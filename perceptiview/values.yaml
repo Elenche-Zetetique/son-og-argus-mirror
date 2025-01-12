@@ -5,4 +5,6 @@ label: perceptiview
 namespace: perceptiview
 secrets:
   registry: registry-access
-
+ingress:
+  class: nginx
+  host: perceptiview.test

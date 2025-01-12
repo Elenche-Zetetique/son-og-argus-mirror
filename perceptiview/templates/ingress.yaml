@@ -4,9 +4,9 @@ metadata:
   name: perceptiview
   namespace: {{ .Values.namespace }}
 spec:
-  ingressClassName: nginx
+  ingressClassName: {{ .Values.ingress.class }}
   rules:
-  - host: perceptiview.test
+  - host: {{ .Values.ingress.host }}
     http:
       paths:
       - path: /
