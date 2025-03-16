@@ -17,9 +17,11 @@ Ensure you have the following installed:
 
 1. Deploy ArgoCD instance (s. [Infrastellar](link))
 
-2. Define the repository URL inside your ArgoCD instance.
+2. Define your ArgoCD-application file inside the above mentioned repository
 
-3. Wait until the charts from the attached repository appear in ArgoCD instance.
+3. Define the templates for your application in the current repository.
+
+4. Wait until the added charts appear in ArgoCD instance.
 
 ## License
 This project is licensed under the [**Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)**](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en) license.
