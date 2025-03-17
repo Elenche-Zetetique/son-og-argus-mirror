@@ -4,7 +4,9 @@ image:
 label: perceptiview
 namespace: perceptiview
 secrets:
-  registry: registry-access
+  registryaccess: 
+    name: registry-access
+    dockerconfigjson: 
 ingress:
   class: nginx
   host: perceptiview.test
