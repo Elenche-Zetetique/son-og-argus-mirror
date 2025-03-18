@@ -15,7 +15,7 @@ Ensure you have the following installed:
 
 ## Usage
 
-1. Deploy ArgoCD instance (s. [Infrastellar](link))
+1. Deploy ArgoCD instance (s. [Infrastellar](https://github.com/Elenche-Zetetique/infrastellar-mirror))
 
 2. Define your ArgoCD-application file inside the above mentioned repository
 
